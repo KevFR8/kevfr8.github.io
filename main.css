@@ -38,6 +38,7 @@ nav {
 
 .nav-item {
     color: #ffff;
+    cursor: pointer;
 }
 
 .nav-item:hover {
