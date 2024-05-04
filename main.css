@@ -45,6 +45,10 @@ nav {
     border-bottom: 2px solid white;
 }
 
+section {
+    margin: 123px;
+}
+
 
 footer {
     color: #747474;
