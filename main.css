@@ -10,8 +10,7 @@
 
 
 body {
-    color: #ffff;
-    background-color: #252526;
+    color: #000;
     font-family: Roboto;
 }
 
@@ -21,13 +20,13 @@ body {
 
 
 a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
 nav {
     background-color: #2196f3;
-    border-bottom: 8px solid #1769aa;
+    border-bottom: 4px solid #1769aa;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -68,10 +67,14 @@ nav {
 }
   
 
+.intro {
+    margin: 123px;
+    padding: 50px;
+}
+
 section {
     margin: 123px;
 }
-
 
 footer {
     font-size: 14px;
