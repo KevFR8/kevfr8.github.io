@@ -26,8 +26,8 @@ a {
 }
 
 nav {
-    background-color: #0072C9;
-    border-bottom: 8px solid #005A9E;
+    background-color: #2196f3;
+    border-bottom: 8px solid #1769aa;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -83,10 +83,9 @@ footer {
 }
 
 .logo {
-	position: absolute;
-    display: flex;
-    width: 200px;
-    height: 200px;
+	position: absolute !important;
+    min-width: 200px;
+    max-height: 200px;
 	top: 30%;
 	left: 85%;
     border-radius: 100%;
@@ -98,3 +97,6 @@ footer {
 .logo:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
+/* Phone device */
+
