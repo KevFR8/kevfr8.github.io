@@ -32,6 +32,8 @@ a {
     text-decoration: none;
 }
 
+/* Barre de navigation */
+
 nav {
     background-color: #2196f3;
     border-bottom: 4px solid #1769aa;
@@ -84,15 +86,6 @@ section {
     margin: 123px;
 }
 
-footer {
-    font-size: 14px;
-    bottom: auto;
-	text-align: center;
-	line-height: normal;
-	padding: 10px;
-    color: #747474;
-}
-
 .logo {
 	position: absolute !important;
     min-width: 200px;
@@ -109,5 +102,38 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+/* Bas de page */
+
+footer {
+    font-size: 14px;
+    bottom: auto;
+	text-align: center;
+	line-height: normal;
+	padding: 10px;
+    color: #747474;
+}
+
 /* Phone device */
 
+@media only screen and (max-width: 600px) { 
+.logo {
+	position: absolute !important;
+    min-width: 128px;
+    max-height: 128px;
+	top: 55%;
+	left: 60%;
+    border-radius: 100%;
+	transform: translate(-50%, -50%);
+	margin-left: -40px;
+    transition: all 0.3s;
+}
+
+.intro {
+    margin: 50px;
+    padding: 25px;
+}
+
+section {
+    margin: 50px;
+}
+  }
