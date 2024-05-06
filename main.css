@@ -11,7 +11,15 @@
 
 body {
     color: #000;
+    background-color: #DDDFE0; 
     font-family: Roboto;
+    background-image: radial-gradient(
+        circle at center,
+        #DADCDE 0.30rem,
+        transparent 0
+      );
+      background-size: 1rem 1rem;
+      background-repeat: round;
 }
 
 #title {
