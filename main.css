@@ -11,15 +11,13 @@
 
 body {
     color: #000;
-    background-color: #DDDFE0; 
+    background-color: #DDDFE0;
     font-family: Roboto;
-    background-image: radial-gradient(
-        circle at center,
-        #DADCDE 0.30rem,
-        transparent 0
-      );
-      background-size: 1rem 1rem;
-      background-repeat: round;
+    background-image: radial-gradient(circle at center,
+            #DADCDE 0.30rem,
+            transparent 0);
+    background-size: 1rem 1rem;
+    background-repeat: round;
 }
 
 #title {
@@ -81,7 +79,7 @@ nav {
     height: 24px;
     margin: 5px;
 }
-  
+
 
 .intro {
     margin: 123px;
@@ -93,14 +91,14 @@ section {
 }
 
 .logo {
-	position: absolute !important;
+    position: absolute !important;
     min-width: 200px;
     max-height: 200px;
-	top: 30%;
-	left: 85%;
+    top: 30%;
+    left: 85%;
     border-radius: 100%;
-	transform: translate(-50%, -50%);
-	margin-left: -40px;
+    transform: translate(-50%, -50%);
+    margin-left: -40px;
     transition: all 0.3s;
 }
 
@@ -113,9 +111,9 @@ section {
 footer {
     font-size: 14px;
     bottom: auto;
-	text-align: center;
-	line-height: normal;
-	padding: 10px;
+    text-align: center;
+    line-height: normal;
+    padding: 10px;
     color: #747474;
 }
 
@@ -130,27 +128,47 @@ footer {
     color: darkblue;
 }
 
+.ytb {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.ytb:hover {
+    color: darkred;
+}
+
+.social-links {
+    list-style-type: disc;
+    text-align: right;
+}
+
+.social {
+    float: right;
+}
+
 /* Phone device */
 
-@media only screen and (max-width: 600px) { 
-.logo {
-	position: absolute !important;
-    min-width: 128px;
-    max-height: 128px;
-	top: 55%;
-	left: 60%;
-    border-radius: 100%;
-	transform: translate(-50%, -50%);
-	margin-left: -40px;
-    transition: all 0.3s;
-}
+@media only screen and (max-width: 600px) {
+    .logo {
+        position: absolute !important;
+        min-width: 128px;
+        max-height: 128px;
+        top: 55%;
+        left: 60%;
+        border-radius: 100%;
+        transform: translate(-50%, -50%);
+        margin-left: -40px;
+        transition: all 0.3s;
+    }
 
-.intro {
-    margin: 50px;
-    padding: 25px;
-}
+    .intro {
+        margin: 50px;
+        padding: 25px;
+    }
 
-section {
-    margin: 50px;
+    section {
+        margin: 50px;
+    }
 }
-  }
