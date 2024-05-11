@@ -140,8 +140,8 @@ footer {
 }
 
 .social-links {
-    list-style-type: disc;
-    text-align: right;
+    margin: 5px;
+    padding: 5px;
 }
 
 .social {
