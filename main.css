@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@-webkit-keyframes moving-gradient {
+    0% {
+        background-position: left bottom;
+    }
+
+    100% {
+        background-position: right bottom;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -147,6 +157,7 @@ footer {
 .social {
     float: right;
 }
+
 
 /* Phone device */
 
