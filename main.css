@@ -100,24 +100,22 @@ section.specs {
 /* Images Specs */
 
 
-.caption {
-    display: block;
-}
 
-#mingallery {
+#picture {
     display: flex;
     justify-content: space-around;
 }
 
-#mingallery .item {
+#picture .item {
     display: flex;
     flex-direction: column;
     border: none;
     margin: 20px;
     text-align: center;
+    color: rgba(0, 0, 0, 0.38)
 }
 
-#mingallery .item img {
+#picture .item img {
     width: 100%;
     height: auto;
 }
