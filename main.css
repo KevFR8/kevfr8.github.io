@@ -85,6 +85,49 @@ nav {
     margin: 5px;
 }
 
+/* Material page */
+/* Section Specs */
+
+section.specs {
+    text-align: right;
+    float: right;
+    margin-right: 500px;
+    top: 0;
+    justify-content: right;
+    display: block;
+}
+
+/* Images Specs */
+
+
+.caption {
+    display: block;
+}
+
+#mingallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mingallery .item {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 20px;
+    text-align: center;
+}
+
+#mingallery .item img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Section Accessories */
+
+
+/* Section Software */
+
 
 .intro {
     margin: 123px;
