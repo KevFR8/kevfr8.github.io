@@ -89,21 +89,20 @@ nav {
 /* Section Specs */
 
 section.specs {
-    text-align: right;
     float: right;
-    margin-right: 500px;
-    top: 0;
-    justify-content: right;
-    display: block;
+    margin-right: 50vh;
+    padding: 0;
+    margin-top: 125px;
+    vertical-align: top;
+    display: inline-block;
 }
 
 /* Images Specs */
 
-
-
 #picture {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 #picture .item {
