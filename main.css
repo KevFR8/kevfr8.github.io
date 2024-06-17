@@ -100,17 +100,15 @@ section.specs {
     display: inline-block;
 }
 
-/* Images Specs */
+/* Images (Specs) */
 
 #picture {
     display: flex;
-
     justify-content: space-around;
     align-items: flex-start;
 }
 
 #picture .item {
-
     display: flex;
     flex-direction: column;
     border: none;
@@ -127,13 +125,6 @@ section.specs {
     height: auto;
 }
 
-
-/* Section Accessories */
-
-
-/* Section Software */
-
-
 /* Emoji 1 (Welcome text) */
 
 .emj1 {
@@ -141,6 +132,15 @@ section.specs {
     margin-bottom: -5px;
     height: 48px;
     width: 48px;
+}
+
+/* Emoji 2 (Specs)) */
+
+.emj2 {
+
+    margin-bottom: -5px;
+    height: 32px;
+    width: 32px;
 }
 
 .intro {
