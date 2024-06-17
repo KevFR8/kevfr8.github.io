@@ -103,21 +103,26 @@ section.specs {
 
 #picture {
     display: flex;
+
     justify-content: space-around;
     align-items: flex-start;
 }
 
 #picture .item {
+
     display: flex;
     flex-direction: column;
     border: none;
     margin: 20px;
+    margin-top: 64px;
     text-align: center;
     color: rgba(0, 0, 0, 0.38)
 }
 
 #picture .item img {
     width: 100%;
+    width: 700px;
+    height: 443px;
     height: auto;
 }
 
@@ -193,6 +198,7 @@ footer {
 .ytb:hover {
     color: darkred;
 }
+
 
 .social-links {
     margin: 5px;
