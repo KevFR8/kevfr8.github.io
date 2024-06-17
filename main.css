@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-@-webkit-keyframes moving-gradient {
-    0% {
-        background-position: left bottom;
-    }
 
-    100% {
-        background-position: right bottom;
-    }
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 10px;
 }
 
 * {
