@@ -166,11 +166,15 @@ section {
 
 footer {
     font-size: 14px;
-    bottom: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
     text-align: center;
     line-height: normal;
     padding: 10px;
-    color: #747474;
+    position: absolute;
+    color: white;
+    background-color: #000;
 }
 
 .link {
