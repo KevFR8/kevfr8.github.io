@@ -40,9 +40,9 @@ a {
 /* Barre de navigation */
 
 nav {
-    background-color: #2196f3;
-    border-bottom: 4px solid #1769aa;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: #019AE8;
+    box-shadow: rgba(0, 0, 0, 12px);
+    box-shadow: rgba(0, 0, 0, 24px);
 }
 
 .nav-list {
@@ -201,13 +201,13 @@ footer {
 
 .ytb {
     color: red;
-    text-decoration: underline;
     cursor: pointer;
     transition: ease-in-out 0.3s;
 }
 
 .ytb:hover {
     color: darkred;
+    text-decoration: underline;
 }
 
 
