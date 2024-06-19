@@ -113,6 +113,8 @@ section.software {
 
 /* Images (Specs) */
 
+/* Picture right */
+
 #picture {
     display: flex;
     justify-content: space-around;
@@ -135,6 +137,36 @@ section.software {
     height: 443px;
     height: auto;
 }
+
+
+/* Picture left */
+
+#picture2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#picture2 .item2 {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    border: none;
+    margin: 20px;
+    margin-top: 64px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.38)
+}
+
+#picture2 .item2 img {
+    width: 100%;
+    width: 700px;
+    float: right;
+    height: 443px;
+    height: auto;
+}
+
+
 
 /* Emoji 1 (Welcome text) */
 
