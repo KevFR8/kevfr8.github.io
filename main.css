@@ -111,6 +111,13 @@ section.software {
     display: inline-block;
 }
 
+section.acess {
+    float: left !important;
+    margin-right: 50vh;
+
+    display: inline-block;
+}
+
 /* Images (Specs) */
 
 /* Picture right */
@@ -165,8 +172,6 @@ section.software {
     height: 443px;
     height: auto;
 }
-
-
 
 /* Emoji 1 (Welcome text) */
 
