@@ -112,8 +112,11 @@ section.software {
 }
 
 section.acess {
-    float: left !important;
-    margin-right: 50vh;
+    float: left;
+    margin-right: -50vh;
+    padding: 0;
+    margin-top: -300px;
+    vertical-align: top;
     display: inline-block;
 }
 
@@ -155,22 +158,23 @@ section.acess {
 
 #picture2 .item2 {
     display: flex;
-    float: right;
     flex-direction: column;
     border: none;
     margin: 20px;
     margin-top: 64px;
     text-align: center;
+    margin-left: 1020px;
     color: rgba(0, 0, 0, 0.38)
 }
 
 #picture2 .item2 img {
-    width: 100%;
     width: 700px;
     float: right;
     height: 443px;
     height: auto;
 }
+
+
 
 /* Emoji 1 (Welcome text) */
 
