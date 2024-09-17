@@ -42,9 +42,8 @@ a {
 
 nav {
     background-color: #019AE8;
-    box-shadow: black 0px 2px 4px -1px;
-    box-shadow: black 0px 4px 5px 0px;
-    box-shadow: black 0px 1px 10px 0px;
+    fill: #039be5;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 2px 5px 0px;
 }
 
 .nav-list {
