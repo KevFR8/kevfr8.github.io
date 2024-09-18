@@ -18,6 +18,14 @@
     <title>KevFR - About</title>
 </head>
 
+<script>
+    function beep() {
+        var beep = new Audio();
+        beep.src = "files/audio/effect_pop.mp3";
+        beep.play();
+    }
+</script>
+
 <body>
     <!-- Nav -->
     <nav>
@@ -28,9 +36,9 @@
         </style>
         <ul class="nav-list">
             <img src="/images/nav/home.png" alt="Home icon" class="nav-icon">
-            <li class="nav-item"><a href="index.html" data-i18n-key="home">Home</a></li>
+            <li class="nav-item"><a href="index.html" onclick="beep()" data-i18n-key="home">Home</a></li>
             <img src="/images/nav/phone.png" alt="Device icon" class="nav-icon">
-            <li class="nav-item"><a href="specs.html" data-i18n-key="material">Material</a></li>
+            <li class="nav-item"><a href="specs.html" onclick="beep()" data-i18n-key="material">Material</a></li>
             <img src="/images/nav/about.png" alt="About icon" class="nav-icon">
             <li class="nav-item" style="border-bottom: 2px solid white;"><a href="about.html"
                     data-i18n-key="about">About</a></li>
@@ -81,5 +89,6 @@
         Icoeye</p>
 </footer>
 <script src="./js/translate.js"></script>
+<script src="./js/audio.js"></script>
 
 </html>
