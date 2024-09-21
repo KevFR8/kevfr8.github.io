@@ -64,7 +64,6 @@ nav {
     text-decoration: none;
 }
 
-
 .nav-item::before {
     content: "";
     position: absolute;
@@ -272,6 +271,8 @@ footer {
 
 .pic {
     position: absolute;
+    align-items: center;
+    justify-content: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -295,15 +296,30 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .logo {
-        position: absolute !important;
-        min-width: 128px;
-        max-height: 128px;
-        top: 55%;
-        left: 60%;
-        border-radius: 100%;
-        transform: translate(-50%, -50%);
-        margin-left: -40px;
-        transition: all 0.3s;
+        visibility: hidden;
+    }
+
+    footer {
+        font-size: 15px;
+        text-align: center;
+        line-height: normal;
+        padding: 15px;
+        color: rgba(0, 0, 0, 0.38);
+    }
+
+    #title {
+        font-size: 54px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .emj1 {
+        margin-left: 5px;
+        visibility: hidden;
+        margin-bottom: -5px;
+        height: 48px;
+        width: 48px;
     }
 
     .intro {
@@ -313,5 +329,28 @@ footer {
 
     section {
         margin: 50px;
+    }
+
+    section.specs {
+        float: right;
+        margin-right: 10vh;
+    }
+
+    section.acess {
+        float: right;
+        margin-right: 10vh;
+    }
+
+    section.software {
+        float: right;
+        margin-right: 10vh;
+    }
+
+    #picture {
+        visibility: hidden;
+    }
+
+    #picture2 {
+        visibility: hidden;
     }
 }
