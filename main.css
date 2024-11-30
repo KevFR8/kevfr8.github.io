@@ -190,6 +190,7 @@ section.software {
     justify-content: space-around;
 }
 
+
 #picture .item {
     display: flex;
     flex-direction: column;
@@ -205,7 +206,14 @@ section.software {
     width: 700px;
     height: 443px;
     height: auto;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
+
+#picture .item img:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
 
 /* Picture left */
 
@@ -231,8 +239,13 @@ section.software {
     float: right;
     height: 443px;
     height: auto;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
 
+#picture2 .item2 img:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
 
 
 /* Emoji 1 (Welcome text) */
