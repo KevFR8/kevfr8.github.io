@@ -311,8 +311,25 @@ footer {
 
 .ytb:hover {
     color: darkred;
-
 }
+
+.button {
+    position: absolute;
+    padding: 9px;
+    background: linear-gradient(to bottom, #009dff 0%, #006cfa 100%);
+    border: none;
+    cursor: pointer;
+}
+
+.button::after {
+    content: "";
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #0067a7 0%, #00367e 100%);
+    color: #F2F2F2;
+}
+
 
 .social-links {
     margin: 5px;
