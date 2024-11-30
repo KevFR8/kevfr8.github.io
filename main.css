@@ -34,7 +34,9 @@ body {
     color: #000;
     padding: 0;
     margin: 0;
-    background-color: #F2F2F2;
+    background: linear-gradient(#bee0fd80, #F2F2F2);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: Selawik;
 }
 
@@ -61,11 +63,53 @@ nav.home {
             #006cfa 80px);
 }
 
+nav.about {
+    background-color: #111111;
+    box-shadow: 0px 4px 20px -10px #9999;
+    background: repeating-linear-gradient(45deg,
+            #111111 0px,
+            #111111 40px,
+            #020202 0px,
+            #020202 80px);
+}
+
+nav.specs {
+    background-color: #fa0000;
+    box-shadow: 0px 4px 20px -10px #9e0000;
+    background: repeating-linear-gradient(45deg,
+            #ff1919 0px,
+            #ff1919 40px,
+            #fa0000 0px,
+            #fa0000 80px);
+}
+
 .nav-list {
     padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Effet de vague (footer) */
+
+.custom-shape-divider-bottom-1732983400 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1732983400 svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1732983400 .shape-fill {
+    fill: #006CFA;
 }
 
 .nav-item {
