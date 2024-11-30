@@ -34,7 +34,7 @@ body {
     color: #000;
     padding: 0;
     margin: 0;
-    background: linear-gradient(#bee0fd80, #F2F2F2);
+    background: linear-gradient(#40a6ff3f, #F2F2F2);
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: Selawik;
@@ -65,7 +65,7 @@ nav.home {
 
 nav.about {
     background-color: #111111;
-    box-shadow: 0px 4px 20px -10px #9999;
+    box-shadow: 0px 4px 20px -10px #00000099;
     background: repeating-linear-gradient(45deg,
             #111111 0px,
             #111111 40px,
@@ -134,10 +134,15 @@ nav.specs {
     background-color: #fff;
     transform: scaleX(0);
     transition: transform 0.2s ease;
+
 }
 
 .nav-item:hover::before {
     transform: scaleX(1);
+}
+
+.nav-item:hover {
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .nav-icon {
@@ -145,6 +150,8 @@ nav.specs {
     height: 20px;
     margin: 5px;
     margin-bottom: 5px;
+
+
 }
 
 /* Material page */
@@ -248,23 +255,6 @@ section.software {
 }
 
 
-/* Emoji 1 (Welcome text) */
-
-.emj1 {
-    margin-left: 15px;
-    margin-bottom: -5px;
-    height: 48px;
-    width: 48px;
-}
-
-/* Emoji 2 (Specs)) */
-
-.emj2 {
-    margin-bottom: -5px;
-    height: 32px;
-    width: 32px;
-}
-
 .intro {
     margin: 123px;
     padding: 50px;
@@ -273,6 +263,8 @@ section.software {
 section {
     margin: 123px;
 }
+
+/* Homepage logo */
 
 .logo {
     position: absolute !important;
@@ -303,25 +295,24 @@ footer {
 .link {
     color: blue;
     cursor: pointer !important;
-    text-decoration: underline;
     transition: ease-in-out 0.3s;
 }
 
 .link:hover {
     color: darkblue;
+    text-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .ytb {
-    color: red;
+    color: #ec222c;
     cursor: pointer;
     transition: ease-in-out 0.3s;
 }
 
 .ytb:hover {
     color: darkred;
-    text-decoration: underline;
-}
 
+}
 
 .social-links {
     margin: 5px;
@@ -330,6 +321,10 @@ footer {
 
 .social {
     float: right;
+}
+
+.socialIcon {
+    columns: 10px;
 }
 
 
