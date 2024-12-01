@@ -89,7 +89,7 @@ nav {
 
 .custom-shape-divider-bottom-1732983400 {
     position: absolute;
-    bottom: 0;
+    bottom: 0 !important;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -105,6 +105,7 @@ nav {
 
 .custom-shape-divider-bottom-1732983400 .shape-fill {
     fill: #006CFA;
+
 }
 
 .nav-item {
@@ -145,8 +146,6 @@ nav {
     height: 20px;
     margin: 5px;
     margin-bottom: 5px;
-
-
 }
 
 /* Material page */
@@ -249,7 +248,6 @@ section.software {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-
 .intro {
     margin: 123px;
     padding: 50px;
@@ -326,6 +324,8 @@ footer {
 .button:hover {
     background: linear-gradient(to bottom, #008fe7 0%, #0060dd 100%);
     color: #F2F2F2;
+    border-top: #dddddd56 solid 1px;
+    border-bottom: #00000067 solid 1px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
@@ -396,6 +396,11 @@ footer {
         text-align: center;
         align-items: center;
         justify-content: center;
+    }
+
+
+    .custom-shape-divider-bottom-1732983400 .shape-fill {
+        visibility: hidden;
     }
 
     .emj1 {
