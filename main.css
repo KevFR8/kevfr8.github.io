@@ -332,9 +332,10 @@ footer {
 
 
 .social-links {
-    margin: 5px;
+    margin: 0px;
     padding: 5px;
 }
+
 
 .social {
     float: right;
