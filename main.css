@@ -285,11 +285,11 @@ section {
     position: absolute !important;
     min-width: 200px;
     max-height: 200px;
-    top: 35%;
+    top: 39%;
     left: 85%;
-    border-radius: 100%;
+    border-radius: 100px;
     transform: translate(-50%, -50%);
-    margin-left: -40px;
+    margin-left: 34px;
     transition: all 0.3s;
 }
 
@@ -334,6 +334,7 @@ footer {
     background: linear-gradient(to bottom, #009dff 0%, #006cfa 100%);
     border: none;
     cursor: pointer;
+    transition: all ease-in-out 0.3s;
 }
 
 .button::after {
@@ -343,6 +344,7 @@ footer {
 .button:hover {
     background: linear-gradient(to bottom, #0067a7 0%, #00367e 100%);
     color: #F2F2F2;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 
