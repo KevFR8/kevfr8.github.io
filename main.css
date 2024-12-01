@@ -68,7 +68,7 @@ a {
 
 /* Barre de navigation */
 
-nav.home {
+nav {
     background-color: #006cfa;
     box-shadow: 0px 4px 20px -10px #10009e;
     background: repeating-linear-gradient(45deg,
@@ -76,26 +76,6 @@ nav.home {
             #0672ff 40px,
             #006cfa 0px,
             #006cfa 80px);
-}
-
-nav.about {
-    background-color: #111111;
-    box-shadow: 0px 4px 20px -10px #00000099;
-    background: repeating-linear-gradient(45deg,
-            #111111 0px,
-            #111111 40px,
-            #020202 0px,
-            #020202 80px);
-}
-
-nav.specs {
-    background-color: #fa0000;
-    box-shadow: 0px 4px 20px -10px #9e0000;
-    background: repeating-linear-gradient(45deg,
-            #ff1919 0px,
-            #ff1919 40px,
-            #fa0000 0px,
-            #fa0000 80px);
 }
 
 .nav-list {
