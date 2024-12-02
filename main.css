@@ -85,27 +85,7 @@ nav {
     justify-content: center;
 }
 
-/* Effet de vague (footer) */
 
-.custom-shape-divider-bottom-1732983400 {
-    position: absolute;
-    bottom: 0 !important;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1732983400 svg {
-    position: relative;
-    display: block;
-    width: calc(158% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-bottom-1732983400 .shape-fill {
-    fill: #006CFA;
-}
 
 .nav-item {
     margin-right: 2rem;
@@ -262,7 +242,7 @@ section {
     position: absolute !important;
     min-width: 200px;
     max-height: 200px;
-    top: 39%;
+    top: 50%;
     left: 85%;
     border-radius: 100px;
     transform: translate(-50%, -50%);
