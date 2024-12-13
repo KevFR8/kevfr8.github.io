@@ -134,31 +134,27 @@ section.specs {
     float: right;
     margin-right: 50vh;
     padding: 0px;
-    align-items: flex-end;
+    position: relative;
     margin-top: 125px;
-    vertical-align: top;
-    display: inline-block;
 }
 
 section.acess {
     float: left;
-    align-items: flex-end;
-    margin-left: 50vh;
+    position: relative;
+    margin-left: 35vh;
     padding: 0;
     margin-top: -300px;
     vertical-align: top;
-    display: inline-block;
 }
 
 section.software {
     float: right;
-    margin-right: 62vh;
-    /* Augmneter = mettre à gauche */
+    margin-right: 54vh;
     padding: 0;
+    position: relative;
     margin-top: 150px;
     text-align: justify;
     vertical-align: top;
-    display: inline-block;
 }
 
 /* Images (Specs) */
