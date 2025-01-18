@@ -240,13 +240,15 @@ section {
     left: 85%;
     border-radius: 100px;
     transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px;
     margin-left: 34px;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 
 .logo:hover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 6px, rgba(0, 0, 0, 0.3) 0px 3px 6px;
+    border-radius: 50px;
 }
 
 /* Bas de page */
