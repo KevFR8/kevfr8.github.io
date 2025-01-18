@@ -296,6 +296,10 @@ footer {
     content: "";
 }
 
+.footerAbout {
+    margin: -115px;
+}
+
 .button:hover {
     background: linear-gradient(to bottom, #008fe7 0%, #0060dd 100%);
     color: #F2F2F2;
