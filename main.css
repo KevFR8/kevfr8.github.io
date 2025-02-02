@@ -15,6 +15,10 @@
     width: 10px;
 }
 
+/* Light mode color pallete */
+:root {
+    --base-variant: rgb(0, 0, 0);
+}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -77,6 +81,13 @@ body::before {
     display: none;
 }
 
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
 
 #title {
     font-size: 64px;
