@@ -54,6 +54,29 @@ body::before {
     z-index: -1;
 }
 
+/* Theme switcher */
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+}
+
+#theme-switch svg {
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
 
 #title {
     font-size: 64px;

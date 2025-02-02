@@ -28,6 +28,34 @@
                 <li class="nav-item"><a href="specs.html" data-i18n-key="material"></a></li>
                 <img src="/images/nav/about.png" alt="About icon" class="nav-icon">
                 <li class="nav-item"><a href="about.html" data-i18n-key="about"></a></li>
+                <button id="theme-switch">
+                    <!-- Sun Icon -->
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="50" height="50" fill="url(#pattern0_21_4)" />
+                        <defs>
+                            <pattern id="pattern0_21_4" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_21_4" transform="scale(0.0104167)" />
+                            </pattern>
+                            <image id="image0_21_4" width="50" height="50"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFiElEQVR4nO2dy29WRRTAD9gWXFkaX8BGQTdVNzSK+2IkvhJlz0MkcYcKrkA0prjQhEQXxkdCGhdE4x/hszbxPxBLrYkvakCUDTWVn5l4Ghtt78zc7z7O3Du/pMmXft+dOfecO68zc84VSQw8tC1f5yEbIBug15BbQDZAryG3gGyAXkNuAdkAvYbcArIBTAHsB3b3zRUB7Hb33lR96wlxCPgLuAI8KD0BmAAuA9eBZ9tW/gq9MAL/Kn+F5o2whvJ7YQT+r/zmjVCg/E4bgfWV35wRgAMe5a82QmMDc0MDrrsnH043B+oUZBdwKUCQzrQE/E9+sw9en4yANeWXaJIrgu2UxAB2Rt5js11uhBHeBjYMUM8NwAPAC8D7wOfAvD6ZfwJL+vkC8Bnwnv72fnftAPVuUNntKT/CCKWUDwwDTwAfRzyFa/Eb8BHwuCuzBiO0P9koMEK08oEx4BVgkeq5CJwCtlRkhPaVX2CEKOUDNwKvAn9QP78DLwObBzCCHeWvYYRY5T+qfXrTzAF7SxjBnvJXAHaEKh/YBLxJu7jV6xlgJMIIOyR1gNuBr7HDLHCr9AHgTuA89pgH7pYuo4ubn0ooZxmYAaaAp4BxN5vR6eqwfh7X76b0t+6aWH7sRBdT0O24gS+G74BjwNYS9W0FjgMLkXV+27nuSAfcmD7/Z3V7D1dQt2shh4FfIseEoIE5CYC3Im7+LDBagwyjwHSEHGekC+g83033fFxrYpMbOKj+Ix/XY9YJJtEVbsgi6yow2aBce7ROH3MxK2ZzqHsh5MmfbEG2ycCWcEpSRB1rIb6d/S3K6LojH1fqGJNqR72aPs4akDNkYH5JUkKnfosBU81RA7JuUVd1EW4KOySpoJspPg6JEYBnAuR9TFJBd7J8K9xhsdVifSvmDyUFdA/Xt414TIzBP26LIi4PssfcGLqBXsRyGd9O3QDbAhx4E2IdPZFQxIwYBfjKI/tzYh09OlLElBgFOO2R/d06Ko0ioLwvPEU8KUYB9nlk/7RyfUZf4BfAzXCKGBejAPd6ZJ8PKCNOn9EX+AXwnRsdE6MAN3tk/zWgjDh9Rl/gF8Dn4BoxvnFUxLWAMqLIBuigAXIXZHwQvkfSHYQvBJQRp8/oC/wCuOPjXZ2GfhJQRqX6LHMT7nx+qgux1zyyvyPWAZ5P2BUx65H9qFhHI1N8kYTbJU1n3C5JxB3tIlOKOC7GAF70yOxmdxslBTQsqIgFgxsy33tkPiepoDFZPg6LEYAjAfI+IqmgT1TIRveokU35xU5tyjs0IM7HtAE5PwiQ86Skhj5ZLiDOx8EWZXw6QD43obhJUkSjEX0subOaLci2J/Bo4glJFXewNTAo42qTRog4nOtCqTZJygAPBx5PX2qiO9JuJ/R4+kPSBTQUNJTp2Gj2iDEpZMBd4XXpCm4XLMDPspqLelywqhClI5HpD2YsLRQrwQW+aQBcDAt6Ym1bifq2q3vBt8L9L98At0gX0Uh6Fwoay7IemjqtPvv7NP5gRP/G9H/79DezJcNUfwDukC7jblCfMmu4fEN3SR8AboscE+rmy050O5HJOkZ0dhQyRa0LV/cboQOu6WQdA6Sr2Vsigr4KzsfM802nq6kgYdNmdd6F+I4Gxfl2TsSscE0nbKo4ZdmoC4iLTCsQiivzZKxjzXTKshqT9g25mCwXFhSRt3O9bcRzGq0/1KmkfQ2nrZxwwRHufL47m6NTxkvq01nSz3P6nfvNUU0wu7GTaStz4tZ2s+baTOfbhzTNfVK+SSPk9PUtp6+PeIFD8k9+iZZg4i0anVR+gBFMvEem08ovMIKJNyn1QvlrGKE95a8SJr/IrU/goW35Og/ZANkAvYbcArIBeg25BWQD9BpyC8gG6DXkFpANIBXyN2BEDD9DZJHGAAAAAElFTkSuQmCC" />
+                        </defs>
+                    </svg>
+
+                    <!-- Moon  -->
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="50" height="50" fill="url(#pattern0_21_5)" />
+                        <defs>
+                            <pattern id="pattern0_21_5" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_21_5" transform="scale(0.0104167)" />
+                            </pattern>
+                            <image id="image0_21_5" width="50" height="50"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+                </button>
+
             </ul>
         </nav>
     </center>
@@ -49,15 +77,9 @@
             <br> (a small team of indie game
             developers, founded by me).
         </p>
-
         <br>
-
         <a href="./about.html" class="button">Learn more about me!</a>
-
     </section>
-
-
-
 </body>
 
 <!-- Footer -->
