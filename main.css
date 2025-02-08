@@ -190,6 +190,19 @@ section.software {
     vertical-align: top;
 }
 
+section.main {
+    background: repeating-linear-gradient(45deg,
+            #ffffff 0px,
+            #ffffff 40px,
+            #fcfcfc 0px,
+            #fcfcfc 80px);
+    border-radius: 35px;
+    width: 1300px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 /* Picture  */
 
