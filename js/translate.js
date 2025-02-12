@@ -1,3 +1,4 @@
+// Variables
 const defaultLocale = "fr";
 const supportedLocales = ["fr", "en"];
 let locale;
