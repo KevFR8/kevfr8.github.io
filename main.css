@@ -229,6 +229,7 @@ section.software {
 #picture .item img:hover {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px;
     scale: 1.02;
+    border-radius: 5px;
 }
 
 #picture2 {
@@ -260,6 +261,7 @@ section.software {
 #picture2 .item2 img:hover {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px;
     scale: 1.02;
+    border-radius: 5px;
 }
 
 .intro {
