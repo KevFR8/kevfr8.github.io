@@ -53,6 +53,16 @@ body.light::before {
     z-index: -1
 }
 
+section.main {
+    background: repeating-linear-gradient(45deg, #fff 0, #fff 40px, #fcfcfc 0, #fcfcfc 80px);
+    border-radius: 35px;
+    width: 1300px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, .4) 0 2px 4px, rgba(0, 0, 0, .1) 0 7px 13px -3px, rgba(0, 0, 0, .1) 0 -2px 0 inset;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
 /* Mode sombre */
 
 body.dark {
@@ -78,6 +88,7 @@ body.dark::before {
     background: linear-gradient(#0202023f, #000000);
     z-index: -1
 }
+
 
 /* Bouton pour changer de thème */
 .btn-toggle {
@@ -189,16 +200,6 @@ section.software {
     vertical-align: top
 }
 
-section.main {
-    background: repeating-linear-gradient(45deg, #fff 0, #fff 40px, #fcfcfc 0, #fcfcfc 80px);
-    border-radius: 35px;
-    width: 1300px;
-    display: block;
-    box-shadow: rgba(0, 0, 0, .4) 0 2px 4px, rgba(0, 0, 0, .1) 0 7px 13px -3px, rgba(0, 0, 0, .1) 0 -2px 0 inset;
-    padding-top: 15px;
-    padding-bottom: 15px
-}
-
 #picture {
     display: flex;
     justify-content: space-around
@@ -224,7 +225,8 @@ section.main {
 }
 
 #picture .item img:hover {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px;
+    scale: 1.02;
 }
 
 #picture2 {
@@ -254,16 +256,17 @@ section.main {
 }
 
 #picture2 .item2 img:hover {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px;
+    scale: 1.02;
 }
 
 .intro {
     margin: 123px;
-    padding: 50px
+    padding: 50px;
 }
 
 section {
-    margin: 123px
+    margin: 123px;
 }
 
 .logo {
@@ -276,12 +279,12 @@ section {
     transform: translate(-50%, -50%);
     box-shadow: rgba(0, 0, 0, .3) 0 3px 6px;
     margin-left: 34px;
-    transition: all .5s
+    transition: all .5s;
 }
 
 .logo:hover {
     box-shadow: rgba(0, 0, 0, .3) 0 3px 6px, rgba(0, 0, 0, .3) 0 3px 6px;
-    border-radius: 50px
+    border-radius: 50px;
 }
 
 footer {
