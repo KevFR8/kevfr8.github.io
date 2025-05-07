@@ -127,6 +127,14 @@ nav {
     background: repeating-linear-gradient(45deg, #0672ff 0, #0672ff 40px, #006cfa 0, #006cfa 80px);
 }
 
+main.light {
+    color: #000;
+}
+
+main.dark {
+    color: #000;
+}
+
 .nav-list {
     padding: 1rem 0;
     display: flex;
