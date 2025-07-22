@@ -1,25 +1,3 @@
-@font-face {
-    font-family: Selawik;
-    src: url(fonts/selawk.ttf);
-    unicode-range: U+0-7F
-}
-
-@font-face {
-    font-family: Selawik;
-    src: url(fonts/selawkb.ttf) format("bold");
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-:root {}
-
-::-webkit-scrollbar-thumb {
-    background: #d3d3d3;
-    border-radius: 10px;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -29,7 +7,7 @@
 
 /* Mode clair */
 
-body.light {
+body {
     color: #000;
     padding: 0;
     margin: 0;
@@ -40,7 +18,7 @@ body.light {
     font-family: Selawik;
 }
 
-body.light::before {
+body:before {
     content: "";
     position: fixed;
     top: 0;
@@ -60,54 +38,6 @@ section.main {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
-/* Mode sombre */
-
-body.dark {
-    color: #fff;
-    padding: 0;
-    margin: 0;
-    background-color: #000;
-    background-image:
-        linear-gradient(45deg, #ffffff19 25%, transparent 25%, transparent 75%, #ffffff19 75%, #ffffff19),
-        linear-gradient(45deg, #ffffff19 25%, transparent 25%, transparent 75%, #ffffff19 75%, #ffffff19);
-    background-size: 60px 60px !important;
-    background-position: 0 0, 30px 30px;
-    font-family: Selawik;
-}
-
-body.dark::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#0202023f, #000000);
-    z-index: -1;
-}
-
-
-/* Bouton pour changer de thème */
-.btn-toggle {
-    position: absolute;
-    padding: 9px;
-    background: linear-gradient(to bottom, #002d49 0, #00122b 100%);
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    transition: ease 0.2s;
-    left: 360px;
-    border-top: #ffffff56 solid 1px;
-    border-bottom: #00000067 solid 1px;
-}
-
-.btn-toggle:hover {
-    scale: 1.02;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, #001e31 0, #000813 100%);
-}
-
 
 #title {
     font-size: 64px;
@@ -131,9 +61,7 @@ main.light {
     color: #000;
 }
 
-main.dark {
-    color: #000;
-}
+
 
 .nav-list {
     padding: 1rem 0;
@@ -208,68 +136,6 @@ section.software {
     margin-top: 150px;
     text-align: justify;
     vertical-align: top;
-}
-
-#picture {
-    display: flex;
-    justify-content: space-around;
-}
-
-#picture .item {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    margin: 20px;
-    margin-top: 64px;
-    text-align: center;
-    color: rgba(0, 0, 0, .38);
-}
-
-#picture .item img {
-    width: 100%;
-    width: 700px;
-    height: 443px;
-    height: auto;
-    cursor: pointer;
-    transition: ease-in-out .3s;
-}
-
-#picture .item img:hover {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px;
-    scale: 1.02;
-    border-radius: 5px;
-}
-
-#picture2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-#picture2 .item2 {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    margin: 20px;
-    margin-top: 64px;
-    text-align: center;
-    margin-left: 1020px;
-    color: rgba(0, 0, 0, .38);
-}
-
-#picture2 .item2 img {
-    width: 700px;
-    float: right;
-    height: 443px;
-    height: auto;
-    cursor: pointer;
-    transition: ease-in-out .3s;
-}
-
-#picture2 .item2 img:hover {
-    box-shadow: rgba(60, 64, 67, .3) 0 1px 2px 0, rgba(60, 64, 67, .15) 0 1px 3px 1px;
-    scale: 1.02;
-    border-radius: 5px;
 }
 
 .intro {
