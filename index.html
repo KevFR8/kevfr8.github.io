@@ -2,35 +2,275 @@
 <html lang="fr">
 
 <head>
-    <!-- Meta -->
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KevFR's personal website">
-    <meta name="theme-color" content="#006cfa">
-    <link rel="icon" href="/images/icon.ico">
-    <!-- Linkers -->
-    <link rel="stylesheet" href="./main.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="theme-color" content="#006EFF">
+    <meta property="og:url" content="https://kevfr8.github.io">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KevFR">
+    <meta property="og:description" content="Wow ">
+    <meta property="og:image" content="./meta/meta_image.png">
+    <meta property="og:image:secure_url" content="./meta/meta_image.png">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+
+    <!-- Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./meta/favicon.ico">
     <title>KevFR</title>
+    <link rel="stylesheet" href="main.min.css">
 </head>
 
 <body>
-    <center>
-        <style>
-            h1 {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        </style>
-        <h1>This website is currently under construction. Come back later!</h1>
-        <p>Latest version - 1.12</p>
-    </center>
+    <main>
+        <!-- Home pages -->
+        <section id="accueil" class="page active">
+            <h1 class="introTitle" data-i18n-key="welcome">Bienvenue</h1>
+            <p class="introText" data-i18n-key="intro">Salut ! Je suis KevFR, un étudiant français faisant <br> des
+                vidéos sur YouTube,
+                passioné
+                par le domaine <br>de l’informatique et du jeux-vidéos !
+            </p>
+            <br>
+            <p class="introText2" data-i18n-key="myGames">Pour voir mes jeux:</p>
+            <a href="https://kevfr8studio.github.io" class="linkGames">https://kevfr8studio.github.io</a>
 
+            <img src="./assets/images/misc/logo.png" alt="KevFR's logo" class="logo">
+            <footer>KevFR © 2025</footer>
+        </section>
+
+        <!-- Navbar -->
+
+        <header>
+            <nav class="navbar">
+                <div class="nav-link">
+                    <a href="#accueil" class="nav-link active-link" data-i18n-key="home"><span
+                            class="material-icons">home</span>Home</a>
+                    <a href="#setup" class="nav-link"><span class="material-icons">desktop_windows</span>Setup</a>
+                    <a href="#projects" class="nav-link" data-i18n-key="projects"><span
+                            class="material-icons">construction</span>Projects</a>
+                    <a href="#about" class="nav-link" data-i18n-key="about"><span
+                            class="material-icons">info_outline</span>About</a>
+                    <a href="#social" class="nav-link"><span class="material-icons">public</span>Social</a>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Specs pages -->
+
+        <section id="setup" class="page">
+            <div class="software">
+                <h1 data-i18n-key="mySetup">My setup</h1>
+                <ul>
+                    <li><b>CPU:</b> AMD Ryzen 5 5600</li>
+                    <li><b>GPU:</b> NVIDIA RTX 3060 (12GB)</li>
+                    <li data-i18n-key="motherboard"><b>Motherboard:</b> B550M AORUS ELITE</li>
+                    <li><b>RAM:</b> CORSAIR Vengeance LPX 16GB</li>
+                    <li><b>SSD:</b> SAMSUNG 980 500GB M.2</li>
+                    <li><b>SSD:</b> SAMSUNG 870 EVO 1TB</li>
+                    <li data-i18n-key="case"><b>Case:</b> ANTEC NX210 ATX</li>
+                    <li><b>OS:</b> Windows 11 (24H2)</li>
+                    <li data-i18n-key="power"><b>Power supply:</b> GIGABYTE GP-PB650B 650W 80+ Bronze</li>
+                    <li data-i18n-key="screen"><b>Screen:</b> IIYAMA G2470HSU-B1 24″</li>
+                </ul>
+            </div>
+
+            <!-- Accessories -->
+            <div class="software">
+                <h1 data-i18n-key="myAccessories">My accessories</h1>
+                <ul>
+                    <li data-i18n-key="keyboard"><b>Keyboard</b> AMD Ryzen 5 5600</li>
+                    <li data-i18n-key="mouse"><b>Mouse</b> NVIDIA RTX 3060 (12GB)</li>
+                    <li><b>Microphone:</b> Fifine K780</li>
+                    <li data-i18n-key="camera"><b>Camera</b> Samsung S23</li>
+                    <li data-i18n-key="gamecard"><b>Game capture</b> Avermedia LGP Lite</li>
+                    <li data-i18n-key="headphone"><b>Headphones</b> Sony WH-1000XM4, Airpods (2nd gen)</li>
+                </ul>
+            </div>
+
+
+            <!-- Software -->
+            <div class="software">
+                <h1 data-i18n-key="mySoftware">Software</h1>
+                <ul>
+                    <li data-i18n-key="editing"><b>Editing software</b> Adobe Premiere Pro 2024</li>
+                    <li data-i18n-key="photo"><b>Photo editing</b> Paint.NET, Figma, Asperite</li>
+                    <li data-i18n-key="record"><b>Recording software</b> Mirilis Action, OBS</li>
+                    <li data-i18n-key="audio"><b>Audio editing</b> Audacity, FL Studio</li>
+                    <li data-i18n-key="virtual"><b>Virtualization</b> VMware Workstation, Virtualbox, PCem</li>
+                    <li data-i18n-key="web"><b>Web browsers</b> Mozilla Firefox, Microsoft Edge</li>
+                    <li><b>Brainstorming :</b> Obsidian, Figjam</li>
+                    <li><b>IDE :</b> Visual Studio Code</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects pages -->
+
+        <section id="projects" class="page">
+            <div id="projects-initial-view">
+                <h1 class="titleProjects" data-i18n-key="titleProjects">Mes projets</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/images/cards/card_pb95.png" alt="Progressbar95">
+                        <div class="card-content">
+                            <h3>Progressbar95</h3>
+                            <ul>
+                                <li data-i18n-key="modspb95">Des mods disponible sur Gamebanana.</li>
+                                <li data-i18n-key="fanart">Fan-art et concept sur Progressmod95.</li>
+                                <li data-i18n-key="fangame">Un fan-game, <a
+                                        href="https://kevfr8.itch.io/progressbar95-shooter">Progressbar95 Shooter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" onclick="window.location='https://kevfr8studio.github.io'">
+                        <img src="./assets/images/cards/card_kevfr8.png" alt="KevFR8 Studio">
+                        <div class="card-content">
+                            <h3>KevFR8 Studio</h3>
+                            <p data-i18n-key="kevfr8studio">Fondateur d'un studio vitrine spécialisé dans le
+                                développement de jeu.</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="window.location='https://www.youtube.com/c/KevFR'">
+                        <img src="./assets/images/cards/card_ytb.png" alt="YouTube">
+                        <div class="card-content">
+                            <h3>YouTube</h3>
+                            <p data-i18n-key="ytbdesc">De l'informatique, des tutoriels et des vidéos sur Progressbar95
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-see-more_container">
+                    <a href="#" id="btn-see-more" class="btn-see-more" data-i18n-key="seemore">Voir plus</a>
+                </div>
+            </div>
+
+
+            <div id="projects-full-view" class="is-hidden">
+                <a href="#" id="close-projects-btn" class="material-icons">close</a>
+                <div class="card-container">
+                    <div class="card" onclick="window.location='https://aurumsmods.de/accfdeluxe/'">
+                        <img src=" ./assets/images/cards/card_accfd.png" alt="">
+                        <div class="card-content">
+                            <h3>Animal Crossing: City Folk Deluxe</h3>
+                            <p data-i18n-key="ac">Traduction et localisation française</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/cards/card_2twogames.png" alt="">
+                        <div class="card-content">
+                            <h3 data-i18n-key="indie">Deux jeux indés</h3>
+                            <p data-i18n-key="indiedesc">Créateur de Firespace et de Qube Dash</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="window.location=''">
+                        <img src="./assets/images/cards/card_plague.png" alt="">
+                        <div class="card-content">
+                            <h3>Plague Inc Evolved</h3>
+                            <p data-i18n-key="plague">Auteur du mod Plague Chat</p>
+                        </div>
+                    </div>
+                    <div class="card"
+                        onclick="window.location='https://userstyles.world/style/20137/vorapis-v3-hide-shorts-and-ads'">
+                        <img src=" ./assets/images/cards/card_vorapis.png" alt="">
+                        <div class="card-content">
+                            <h3>VORAPIS V3</h3>
+                            <p data-i18n-key="vorapis">Extension pour cacher les publicités et les Shorts</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/cards/card_mockup.png" alt="">
+                        <div class="card-content">
+                            <h3>OS-mockups</h3>
+                            <p data-i18n-key="list">Liste de système d'exploitation fictif:</p>
+                            <ul>
+                                <li>kevOS</li>
+                                <li data-i18n-key="pbtouch"><a
+                                        href="https://progressmod95.fandom.com/wiki/Progressbar_Touch">Progressbar
+                                        Touch</a> (basé sur les Windows Phone)</li>
+                                <li>Squish OS</li>
+                                <li><a href="https://progressmod95.fandom.com/wiki/PBuntu">PBuntu</a> (basé sur Ubuntu)
+                                </li>
+                                <li><a href="https://github.com/KevFR8/Nanica-3DX">Nanica 3DX</a> (basé sur la Nintendo
+                                    3DS)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+
+        <section id="see-more" class="page">
+            <h1 class="titleProjects" data-i18n-key="titleProjects">Mes projets</h1>
+        </section>
+
+        <!-- About pages -->
+
+        <section id="about" class="page">
+            <div class="about_container">
+                <h1 class="titleAbout" data-i18n-key="titleAbout">À propos</h1>
+                <p data-i18n-key="who">Enchanté, je m'appelle Kévin, j'ai 17 ans et diplomé du bac. Depuis l'âge de 8
+                    ans jequi aime la
+                    technologie et les jeux-vidéos depuis mes 8 ans. Je suis bachelier et j'ai pour ambition de devenir
+                    développeur de jeu-vidéos. Egalement je
+                    fais de l'infographie, des mods pour Progressbar95 et j'apprend d'autres compétences comme la
+                    composition de musique durant mon temps libre.
+                </p>
+                <p data-i18n-key="statut">Je suis actuellement en BTS GPME</p>
+            </div>
+            <div class="question_container">
+                <h2 data-i18n-key="fewquest">Quelques questions</h2>
+
+                <h3 data-i18n-key="username">Pourquoi « KevFR » et un Enderman comme avatar ? </h3>
+                <p data-i18n-key="answer1">J'ai choisi « KevFR » puisque le mélange entre mon prénom et « FR » pour
+                    France collait bien.<br>
+                    Et pour mon avatar, je trouve simplement les Enderman stylé et le bleu est ma couleur préféré !</p>
+                <br>
+                <h3 data-i18n-key="kevcorp">Qu'est-il advenue de « kevcoorp.github.io » ?</h3>
+                <p class="question-answer" data-i18n-key="answer2">Pour éviter des confusions avec la Karmine Corp
+                    (KCORP), l'indisponibilité de
+                    l'appellation, et <br>
+                    justifié par le statut de l'équipe, il a été renommé en KevFR8 Studio.
+                </p>
+            </div>
+
+
+            <footer>KevFR © 2025 <br> <span>Version 2.00</span></footer>
+            </div>
+
+        </section>
+
+        <!-- Social pages -->
+
+        <section id="social" class="page">
+            <div class="social-container">
+                <h3 class="title3" data-i18n-key="social">Mes réseaux</h3>
+                <div class="icons-wrapper">
+                    <a href="https://www.youtube.com/KevFR"><img src="./assets/images/icons/youtube_icon.png"
+                            class="icon"></a>
+                    <a href="https://https://kevfr8.itch.io/"><img src="./assets/images/icons/itchio_icon.png"
+                            class="icon"></a>
+                    <a href="https://gamebanana.com/members/2859719"><img src=./assets/images/icons/gamebanana_icon.png
+                            class="icon"></a>
+                    <a href="https://github.com/KevFR8"><img src="./assets/images/icons/github_icon.png"
+                            class="icon"></a>
+                </div>
+            </div>
+            <footer>KevFR © 2025</footer>
+        </section>
+    </main>
 </body>
 
+<script src="./js/script.js"></script>
+<script src="./js/translate.js"></script>
 
 </html>
