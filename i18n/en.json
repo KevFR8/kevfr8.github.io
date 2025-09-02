@@ -23,6 +23,8 @@
     "audio": "<b>Audio editing:</b> Audacity, FL Studio (DAW)",
     "virtual": "<b>Virtualization software:</b> VMware Workstation, Virtualbox, PCem",
     "web": "<b>Web browsers:</b> Mozilla Firefox, Microsoft Edge",
+    "brainstorm": "<b>Brainstorming:</b> Obsidian, Figjam</li>",
+    "ide": "<b>IDE:</b> Visual Studio Code",
     "titleAbout": "About",
     "titleProjects": "My projects",
     "who": "Pleased to meet you, my name is Kevin, a 17-year-old French student and nerd, holder of a high school diploma and a STMG baccalaureate. Since the age of 8, I have been interested in everything related to computers and video games. In my free time, I create mods for <a href='https://store.steampowered.com/app/1304550/Progressbar95/'><i>Progressbar 95</i></a>, learn to compose my own music, and do computer graphics.",
