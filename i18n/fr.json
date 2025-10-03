@@ -1,4 +1,4 @@
-{
+﻿{
     "welcome": "Bienvenue",
     "intro": "Salut ! Je suis KevFR, un étudiant français faisant des <br> vidéos sur YouTube, passioné par le domaine <br> de l'informatique et du jeux-vidéos !",
     "myGames": "Pour voir mes jeux :",
@@ -44,10 +44,8 @@
     "indie": "Deux jeux indés",
     "indiedesc": "Créateur de <a href='https://kevfr8.itch.io/firespace'>Firespace</a> et de <a href='https://kevfr8.itch.io/qube-dash'>Qube Dash</a>",
     "plague": "Auteur du mod <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=3473728221'>Plague Chat</a>",
-    "vorapis": "Extension to hide ads and Shorts",
+    "vorapis": "Extension pour cacher les pubs et les Shorts.",
     "list": "Cliquer ici pour en savoir plus !",
-    "pbtouch": "<a href='https://progressmod95.fandom.com/wiki/Progressbar_Touch'>Progressbar Touch</a> (basé sur le Windows Phone)",
-    "pbuntu": "<a href='https://progressmod95.fandom.com/wiki/PBuntu'>PBuntu</a> (basé sur Ubuntu)",
-    "nanica": "<a href='https://github.com/KevFR8/Nanica-3DX'>Nanica 3DX</a> (basé sur la Nintendo 3DS)",
+    "pbtouch": "Concept basé sur le Windows Phone dans l'univers de Progressbar95.",
     "social": "Mes réseaux"
 }
