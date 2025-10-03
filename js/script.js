@@ -58,3 +58,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+// --- NOUVEAU CODE POUR LA VUE OS-MOCKUPS ---
+document.addEventListener('DOMContentLoaded', function () {
+
+    // On sélectionne les éléments nécessaires
+    const osMockupCard = document.getElementById('os-mockup-card');
+    const closeOsMockupsBtn = document.getElementById('close-os-mockups-btn');
+
+    const projectsFullView = document.getElementById('projects-full-view');
+    const osMockupsView = document.getElementById('os-mockups-view');
+
+    // On s'assure que tous les éléments existent avant d'ajouter les écouteurs
+    if (osMockupCard && closeOsMockupsBtn && projectsFullView && osMockupsView) {
+
+        // Événement au clic sur la carte "OS-mockups"
+        osMockupCard.addEventListener('click', function (e) {
+            e.preventDefault(); // Empêche tout comportement par défaut
+            projectsFullView.style.display = 'none'; // Cache la vue complète des projets
+            osMockupsView.style.display = 'block';   // Affiche la vue des mockups
+        });
+
+        // Événement au clic sur le bouton de retour
+        closeOsMockupsBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            osMockupsView.style.display = 'none';      // Cache la vue des mockups
+            projectsFullView.style.display = 'block'; // Ré-affiche la vue complète des projets
+        });
+    }
+});

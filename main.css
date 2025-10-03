@@ -270,6 +270,28 @@ h3 {
     max-width: 100%;
 }
 
+
+/* OS-mockup view */
+
+#os-mockups-view {
+    display: none;
+    position: relative;
+}
+
+#close-os-mockups-btn {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+#close-os-mockups-btn:hover {
+    transform: scale(1.2);
+}
+
 .btn-see-more:hover {
     color: #D2D2D2;
     transform: translateY(-3px);
