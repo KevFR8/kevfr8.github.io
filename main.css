@@ -75,6 +75,7 @@ main {
     transition: ease-in-out .4s;
     overflow: hidden;
     box-sizing: border-box;
+    border: solid 5px rgba(0, 0, 0, 0.124);
 }
 
 main:hover {
@@ -268,6 +269,21 @@ h3 {
     cursor: pointer;
     transition: all 0.3s ease;
     max-width: 100%;
+}
+
+
+.btn-download {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #00000034;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 
