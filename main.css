@@ -487,10 +487,17 @@ footer {
         justify-content: center;
     }
 
+    .introTitle {
+        font-size: 2rem;
+        top: 10%;
+        margin: 0 25%;
+    }
+
     .introText {
-        font-size: 1.5rem;
-        top: 30%;
+        font-size: 1.3rem;
+        top: 20%;
         margin: 0 auto;
+        text-align: center;
         padding-left: 20px;
     }
 
