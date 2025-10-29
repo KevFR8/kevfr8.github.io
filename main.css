@@ -1,29 +1,50 @@
+/* ---------------------------------------- */
 /* Fonts */
+/* ---------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* ---------------------------------------- */
+/* Icons */
+/* ---------------------------------------- */
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
     color: white;
     font-size: 1.25rem;
-    /* 20px -> 1.25rem */
     padding: 0.1875rem;
     display: inline-block;
     line-height: 1;
     vertical-align: middle;
-    /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-    /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.icons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
+
+.icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.12)) drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.24));
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+/* ---------------------------------------- */
+/* Body */
+/* ---------------------------------------- */
 
 body {
     background-image: url(./assets/images/bg/background.png);
@@ -40,9 +61,9 @@ body {
     padding: 0;
 }
 
-/* Fenêtre */
-
-/* Styles for pages */
+/* ---------------------------------------- */
+/* Monopage style */
+/* ---------------------------------------- */
 .page {
     position: absolute;
     top: 60px;
@@ -82,7 +103,9 @@ main:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* Navbar */
+/* ---------------------------------------- */
+/* Nav */
+/* ---------------------------------------- */
 
 nav {
     position: absolute;
@@ -112,7 +135,9 @@ nav {
     font-weight: 500;
 }
 
-/* Text stuffs */
+/* ---------------------------------------- */
+/* Links */
+/* ---------------------------------------- */
 
 a {
     list-style-type: none;
@@ -125,6 +150,9 @@ a:hover {
     color: #007fd3;
 }
 
+/* ---------------------------------------- */
+/* Titles */
+/* ---------------------------------------- */
 
 .introTitle {
     font-size: 44px;
@@ -133,6 +161,39 @@ a:hover {
     top: 30%;
     font-weight: 500;
 }
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.titleProjects {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 55px);
+    margin-top: 50px;
+}
+
+.titleAbout {
+    text-align: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 54px;
+    color: white;
+}
+
+.title3 {
+    font-weight: 300;
+    font-size: 54px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* ---------------------------------------- */
+/* Text */
+/* ---------------------------------------- */
 
 .introText {
     font-size: clamp(1.8rem, 1vw, 5rem);
@@ -174,17 +235,10 @@ ul {
     padding-left: 30px;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: 300;
-    margin: 0;
-}
 
-.software {
-    margin: 25px;
-    font-size: 20px;
-}
+/* ---------------------------------------- */
+/* Images */
+/* ---------------------------------------- */
 
 .logo {
     position: absolute !important;
@@ -197,15 +251,65 @@ h3 {
     margin-left: auto;
 }
 
-
-/* Project SECTION */
-
-.titleProjects {
-    text-align: center;
-    font-size: clamp(2rem, 5vw, 55px);
-    margin-top: 50px;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
+.software {
+    margin: 25px;
+    font-size: 20px;
+}
+
+
+/* ---------------------------------------- */
+/* Buttons */
+/* ---------------------------------------- */
+
+.btn-see-more_container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.btn-see-more {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #00000034;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    max-width: 100%;
+}
+
+
+.btn-download {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #00000034;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-see-more:hover {
+    color: #D2D2D2;
+    transform: translateY(-3px);
+}
+
+/* ---------------------------------------- */
+/* Cards */
+/* ---------------------------------------- */
 
 .card-container {
     display: flex;
@@ -250,44 +354,32 @@ h3 {
     margin-bottom: 3px;
 }
 
-.btn-see-more_container {
-    text-align: center;
-    padding: 20px 0;
+/* ---------------------------------------- */
+/* Subpage projects view */
+/* ---------------------------------------- */
+
+#projects-full-view {
+    display: none;
+    position: relative;
 }
 
-
-.btn-see-more {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1rem;
-    background-color: #00000034;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
+#close-projects-btn {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    font-size: 32px;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    max-width: 100%;
+    text-decoration: none;
+    transition: transform 0.2s ease;
 }
 
-
-.btn-download {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1rem;
-    background-color: #00000034;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+#close-projects-btn:hover {
+    transform: scale(1.2);
 }
 
-
-/* OS-mockup view */
+/* ---------------------------------------- */
+/* Subpage mockup view */
+/* ---------------------------------------- */
 
 #os-mockups-view {
     display: none;
@@ -308,21 +400,10 @@ h3 {
     transform: scale(1.2);
 }
 
-.btn-see-more:hover {
-    color: #D2D2D2;
-    transform: translateY(-3px);
+/* ---------------------------------------- */
+/* Containers */
+/* ---------------------------------------- */
 
-}
-
-/* About SECTION */
-
-.titleAbout {
-    text-align: center;
-    align-items: center;
-    font-weight: 300;
-    font-size: 54px;
-    color: white;
-}
 
 .about_container {
     padding: 30px;
@@ -354,11 +435,23 @@ h3 {
     font-size: 18px;
 }
 
+.social-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 span {
     color: rgba(255, 255, 255, 0.25);
     font-weight: 200;
     margin: 0 auto;
 }
+
+/* ---------------------------------------- */
+/* Footer */
+/* ---------------------------------------- */
 
 footer {
     position: absolute;
@@ -371,71 +464,9 @@ footer {
     flex-direction: column;
 }
 
-
-/* Social SECTION */
-
-.social-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.title3 {
-    font-weight: 300;
-    font-size: 54px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-
-.icons-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.icon {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    object-fit: cover;
-    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.12)) drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.24));
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon:hover {
-    transform: translateY(-8px) scale(1.05);
-}
-
-
-/* Projects full view */
-
-#projects-full-view {
-    display: none;
-    position: relative;
-}
-
-#close-projects-btn {
-    position: absolute;
-    top: -20px;
-    left: 15px;
-    font-size: 32px;
-    color: white;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-}
-
-#close-projects-btn:hover {
-    transform: scale(1.2);
-}
-
-
-
-
+/* ---------------------------------------- */
 /* Responsive design */
+/* ---------------------------------------- */
 
 @media screen and (max-width: 1000px) {
     main {
