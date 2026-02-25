@@ -382,6 +382,34 @@ img {
     transform: scale(1.2);
 }
 
+#changelog-view {
+    display: none;
+    position: relative;
+}
+
+#close-changelog-btn {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+#close-changelog-btn:hover {
+    transform: scale(1.2);
+}
+
+.btn-changelog {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.btn-changelog:hover {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
 /* ---------------------------------------- */
 /* Subpage mockup view */
 /* ---------------------------------------- */

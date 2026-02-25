@@ -1,6 +1,6 @@
 // made with AI cuz im suck at js
 
-// Monopage 
+// Monopage
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const pages = document.querySelectorAll('.page');
@@ -83,6 +83,31 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             osMockupsView.style.display = 'none';      // Cache la vue des mockups
             projectsFullView.style.display = 'block'; // Ré-affiche la vue complète des projets
+        });
+    }
+});
+
+
+// same things as os mockup btn but for changelog
+document.addEventListener('DOMContentLoaded', function () {
+    const btnChangelog = document.getElementById('btn-changelog');
+    const closeChangelogBtn = document.getElementById('close-changelog-btn');
+    const aboutInitialView = document.getElementById('about-initial-view');
+    const changelogView = document.getElementById('changelog-view');
+
+    if (btnChangelog && closeChangelogBtn && aboutInitialView && changelogView) {
+        // Événement au clic sur "Version 2.05"
+        btnChangelog.addEventListener('click', function (e) {
+            e.preventDefault();
+            aboutInitialView.style.display = 'none';
+            changelogView.style.display = 'block';
+        });
+
+        // Événement au clic sur la croix de fermeture
+        closeChangelogBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            changelogView.style.display = 'none';
+            aboutInitialView.style.display = 'block';
         });
     }
 });
