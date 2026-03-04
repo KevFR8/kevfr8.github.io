@@ -111,3 +111,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// for pb95 card (;_; thx chatgpt)
+
+function goToPage(pageId) {
+    // Change les sections
+    document.querySelectorAll(".page").forEach(page => {
+        page.classList.remove("active");
+    });
+
+    document.getElementById(pageId).classList.add("active");
+    document.querySelectorAll(".navbar a").forEach(link => {
+        link.classList.remove("active-link");
+
+        if (link.getAttribute("href") === "#" + pageId) {
+            link.classList.add("active-link");
+        }
+    });
+
+    // Change le hash
+    window.location.hash = pageId;
+}
