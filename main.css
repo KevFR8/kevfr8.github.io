@@ -61,6 +61,7 @@ body {
     padding: 0;
 }
 
+
 /* ---------------------------------------- */
 /* Monopage style */
 /* ---------------------------------------- */
@@ -160,18 +161,11 @@ a:hover {
 /* Titles */
 /* ---------------------------------------- */
 
-.introTitle {
-    font-size: 44px;
-    padding-left: 50px;
-    position: absolute;
-    top: 30%;
-    font-weight: 500;
-}
 
 h1,
 h2,
 h3 {
-    font-weight: 300;
+    font-weight: 470;
     margin: 0;
 }
 
@@ -181,16 +175,9 @@ h3 {
     margin-top: 50px;
 }
 
-.titleAbout {
-    text-align: center;
-    align-items: center;
-    font-weight: 300;
-    font-size: 54px;
-    color: white;
-}
 
 .title3 {
-    font-weight: 300;
+    font-weight: 470;
     font-size: 54px;
     color: white;
     margin-bottom: 20px;
@@ -201,18 +188,6 @@ h3 {
 /* Text */
 /* ---------------------------------------- */
 
-.introText {
-    font-size: clamp(1.8rem, 1vw, 5rem);
-    margin: 0;
-    display: flex;
-    line-height: 38px;
-    position: absolute;
-    top: 40%;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    padding-left: 50px;
-}
 
 .introText2 {
     font-size: 20px;
@@ -431,6 +406,7 @@ img {
 
 #close-os-mockups-btn:hover {
     transform: scale(1.2);
+
 }
 
 /* ---------------------------------------- */
@@ -438,35 +414,37 @@ img {
 /* ---------------------------------------- */
 
 
+.home_container {
+    font-size: 44px;
+    font-weight: 470;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .about_container {
-    padding: 30px;
-    line-height: 1.3;
+    padding-left: 50px;
+    position: absolute;
+    top: 32%;
 }
 
 .about_container p {
-    font-size: 20px;
-    text-align: center;
-    padding-left: 50px;
+    font-size: 1.3rem;
+    top: 20%;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 20px;
 }
 
-.question_container {
-    padding-left: 80px;
-    margin: -30px auto;
+.about_container h1 {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 470;
+    font-size: 54px;
+    color: white;
 }
 
-.question_container h3 {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.question_container h2 {
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.question_container p {
-    font-size: 18px;
-}
 
 .social-container {
     position: absolute;
@@ -555,13 +533,6 @@ footer {
         margin: 0 25%;
     }
 
-    .introText {
-        font-size: 1.3rem;
-        top: 20%;
-        margin: 0 auto;
-        text-align: center;
-        padding-left: 20px;
-    }
 
     .introText2 {
         font-size: 1.5rem;
@@ -580,11 +551,6 @@ footer {
         max-width: 300px;
         margin: 0 auto;
         text-align: center;
-    }
-
-    .question_container {
-        padding-left: 20px;
-        margin: -30px auto;
     }
 
     footer {
