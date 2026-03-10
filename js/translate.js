@@ -69,5 +69,5 @@ function toggleLanguage() {
 
 function updateLanguageButton() {
     const btn = document.getElementById("langBtn");
-    btn.textContent = locale === "fr" ? "Passer en Anglais" : "Switch to French";
+    btn.textContent = locale === "fr" ? "Switch to English" : "Passer en français";
 }
