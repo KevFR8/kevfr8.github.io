@@ -18,6 +18,8 @@ async function setLocale(newLocale) {
     translations = newTranslations;
 
     translatePage();
+
+    updateLanguageButton();
 }
 
 async function fetchTranslationsFor(newLocale) {
@@ -59,3 +61,13 @@ function changeLanguage(lang) {
 // Define the language reload anchors
 let language = {
 };
+
+function toggleLanguage() {
+    const newLocale = locale === "fr" ? "en" : "fr";
+    setLocale(newLocale);
+}
+
+function updateLanguageButton() {
+    const btn = document.getElementById("langBtn");
+    btn.textContent = locale === "fr" ? "Passer en Anglais" : "Switch to French";
+}

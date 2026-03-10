@@ -288,6 +288,31 @@ img {
     transform: translateY(-3px);
 }
 
+#langBtn {
+    display: inline-block;
+    padding: 12px 32px;
+    font-size: 1rem;
+    background-color: #00000034;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    position: fixed;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+#langBtn:hover {
+    color: #D2d2d2;
+    transform: translateX(-50%) translateY(-3px);
+}
+
+
 /* ---------------------------------------- */
 /* Cards */
 /* ---------------------------------------- */
