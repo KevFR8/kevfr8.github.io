@@ -511,7 +511,6 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-
     .navbar {
         padding: 0;
     }
@@ -526,12 +525,13 @@ footer {
     }
 
     .material-icons {
-        display: none;
+        font-size: 0.9frem;
+        padding: 0.1875rem;
     }
 
 
     .home_container {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: 470;
         position: absolute;
         top: 50%;
@@ -559,6 +559,12 @@ footer {
         font-size: 2rem;
         top: 10%;
         margin: 0 25%;
+    }
+
+    .nav-link.active-link,
+    .nav-link.activ .nav-link a {
+        background-color: rgba(0, 0, 0, .35);
+        padding: 2px 12px;
     }
 
 
