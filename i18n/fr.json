@@ -1,7 +1,7 @@
 ﻿{
     "welcome": "Bienvenue",
     "myGames": "Pour voir mes jeux :",
-    "home": "<span class='material-icons'>home</span>Acceuil",
+    "home": "<span class='material-icons'>home</span>Accueil",
     "works": "<span class='material-icons'>construction</span>Mes travaux",
     "about": "<span class='material-icons'>info_outline</span>À propos",
     "mySetup": "Mon setup",
