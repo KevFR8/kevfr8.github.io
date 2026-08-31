@@ -132,3 +132,5 @@ function goToPage(pageId) {
     // Change le hash
     window.location.hash = pageId;
 }
+
+

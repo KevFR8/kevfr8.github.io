@@ -47,6 +47,7 @@
                     <a href="#setup" class="nav-link"><span class="material-icons">desktop_windows</span>Setup</a>
                     <a href="#projects" class="nav-link" data-i18n-key="works"><span
                             class="material-icons">construction</span>Works</a>
+                    <a href="#mockups" class="nav-link"><span class="material-icons">image</span>Mockups</a>        
                     <a href="#about" class="nav-link" data-i18n-key="about"><span
                             class="material-icons">info_outline</span>About</a>
                     <a href="#social" class="nav-link"><span class="material-icons">public</span>Social</a>
@@ -75,8 +76,7 @@
                         </ul>
                     </div>
                 </div>
-
-                                <div class="box3">
+                <div class="box3">
                     <div class="boxImg">
                         <img src="./assets/images/icons/software_icon.png" alt="">
                     </div>
@@ -180,77 +180,91 @@
                             <h3>VORAPIS V3</h3>
                             <p data-i18n-key="vorapis">Extension pour cacher les publicités et les Shorts</p>
                         </div>
-
-                    </div>
-                    <div class="card" id="os-mockup-card">
-                        <img src="./assets/images/cards/card_mockup.png" alt="">
-                        <div class="card-content">
-                            <h3>OS-mockups</h3>
-                            <p data-i18n-key="list">Click here to find out more!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="os-mockups-view">
-                <a href="#" id="close-os-mockups-btn" class="material-icons">arrow_back</a>
-                <h1 class="titleProjects">Samples of mockups</h1>
-                <div class="card-container">
-
-                    <div class="card">
-                        <img src="./assets/images/cards/mockups/card_pbos.png" alt="pBOS">
-                        <div class="card-content">
-                            <h3>pBOS</h3>
-                            <p data-i18n-key="pBOS">Concept basé sur iOS
-                            </p>
-                               <button class="btn-download" data-i18n-key="download"
-                                onclick="location.href = 'assets/mockups/pBOS Mockup.zip'">Download</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-                        <img src="./assets/images/cards/mockups/card_pbtouch.png" alt="Progressbar Touch">
-                        <div class="card-content">
-                            <h3>Progressbar Touch</h3>
-                            <p data-i18n-key="pbtouch">Concept basé sur les Windows Phone.
-                            </p>
-                            <button class="btn-download" data-i18n-key="download"
-                                onclick="location.href = 'assets/mockups/Progressbar Touch.zip'">Download</button>
-                        </div>
-                    </div>
-                <div class="card">
-                        <img src="./assets/images/cards/mockups/card_playbar.png" alt="PlayBar">
-                        <div class="card-content">
-                            <h3>PlayBar</h3>
-                            <p data-i18n-key="playbar">Concept basé sur la PlayStation
-                            </p>
-                               <button class="btn-download" data-i18n-key="download"
-                                onclick="location.href = 'assets/mockups/PlayBar Mockup.zip'">Download</button>
-                    </div>
-                </div>
-                    <div class="card">
-                        <img src="./assets/images/cards/mockups/card_xbar180.png" alt="Xbar 180">
-                        <div class="card-content">
-                            <h3>Xbar 180</h3>
-                            <p data-i18n-key="xbar180">Concept basé sur la XBOX 360
-                            </p>
-                               <button class="btn-download" data-i18n-key="download"
-                                onclick="location.href = 'assets/mockups/Xbar 180 Mockup.zip'">Download</button>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
         </section>
-
-
         <section id="see-more" class="page">
             <h1 class="titleProjects" data-i18n-key="titleProjects">Mes projets</h1>
         </section>
 
+       <!-- Mockup pages -->
+
+        <section id="mockups" class="page">
+            <div id="mockups-initial-view">
+                <div class="carousel" id="mockupCarousel">
+                    <div class="carousel-track" id="carouselTrack">
+
+
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cards/mockups/card_pbuntu.png" alt="PBuntu">
+                            <div class="slide-overlay">
+                                <div class="slide-badge">PBuntu</div>
+                                <p class="slide-desc" data-i18n-key="pBOS">Concept basé sur iOS</p>
+                                <button class="btn-download" data-i18n-key="WIP">ubuntu</button>
+                                <button class="btn-download" data-i18n-key="watch" onclick="window.open('https://www.youtube.com/watch?v=OR3ykMlhNGs', '_blank')">Watch on YouTube</button>
+                            </div>
+                        </div>                          
+
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cards/mockups/card_pbos.png" alt="pBOS">
+                            <div class="slide-overlay">
+                                <div class="slide-badge">pBOS</div>
+                                <p class="slide-desc" data-i18n-key="pBOS">Concept basé sur iOS</p>
+                                <button class="btn-download" data-i18n-key="download"
+                                    onclick="location.href='assets/mockups/pBOS Mockup.zip'">Télécharger</button>
+                                <button class="btn-download" data-i18n-key="watch" onclick="window.open('https://www.youtube.com/watch?v=Zl4a13tFbho', '_blank')">Watch on YouTube</button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cards/mockups/card_xbar180.png" alt="Xbar 180">
+                            <div class="slide-overlay">
+                                <div class="slide-badge">Xbar 180</div>
+                                <p class="slide-desc" data-i18n-key="xbar180">Concept basé sur la XBOX 360</p>
+                                <button class="btn-download" data-i18n-key="download"
+                                    onclick="location.href='assets/mockups/Xbar 180 Mockup.zip'">Télécharger</button>
+                                <button class="btn-download" data-i18n-key="watch" onclick="window.open('https://www.youtube.com/watch?v=UPxVGJD3CwI', '_blank')">Watch on YouTube</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cards/mockups/card_playbar.png" alt="PlayBar">
+                            <div class="slide-overlay">
+                                <div class="slide-badge">PlayBar</div>
+                                <p class="slide-desc" data-i18n-key="playbar">Concept basé sur PlayStation</p>
+                                <button class="btn-download" data-i18n-key="WIP">ubuntu</button>
+                                <button class="btn-download" data-i18n-key="watch" onclick="window.open('https://www.youtube.com/watch?v=D5HBTwMzhAQ', '_blank')">Watch on YouTube</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/cards/mockups/card_pbtouch.png" alt="Progressbar Touch">
+                            <div class="slide-overlay">
+                                <div class="slide-badge">Progressbar Touch</div>
+                                <p class="slide-desc" data-i18n-key="pbtouch">Concept basé sur Windows Phone</p>
+                                <button class="btn-download" data-i18n-key="WIP">ubuntu</button>
+                                <button class="btn-download" data-i18n-key="watch" onclick="window.open('https://www.youtube.com/watch?v=wgzRCa8vb08', '_blank')">Watch on YouTube</button>
+                            </div>
+                        </div>          
+                    </div>
+
+                    
+
+                    <button class="carousel-arrow carousel-prev" onclick="moveCarousel(-1)" aria-label="Précédent">
+                        <span class="material-icons">arrow_back</span>
+                    </button>
+                    <button class="carousel-arrow carousel-next" onclick="moveCarousel(1)" aria-label="Suivant">
+                        <span class="material-icons">arrow_forward</span>
+                    </button>
+
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </div>
+        </section>
+        <section id="see-more" class="page">
+            <h1 class="titleMockups"></h1>Mockups</h1>
+        </section>
+
+
+
         <!-- About pages -->
+
         <section id="about" class="page">
             <div id="about-initial-view">
                 <div class="about_container">
@@ -265,78 +279,9 @@
                     <br>
                     <p data-i18n-key="statut">null</p>
                 </div>
-
                 <img src="./assets/images/misc/logo.png" alt="Logo" class="logo">
-                <footer>KevFR © 2026 <br><span><a href="#" id="btn-changelog" class="btn-changelog">Version
-                            2.08</a></span>
+                <footer>KevFR © 2026 <br><span>Version 3.0</span></br>
                 </footer>
-            </div>
-
-            <!-- Changelog page -->
-            <div id="changelog-view">
-                <a href="#" id="close-changelog-btn" class="material-icons">close</a>
-                <h1 class="titleProjects">Changelog</h1>
-                <div style="padding: 30px; line-height: 1;">
-
-                    <!-- Version 2.8 -> Add new translate btn -->
-
-                    <h1 style="font-weight: bolder">Version 2.08</h1>
-                    <p>&bull; Mise à jour de la page setup</p>
-                    <p>&bull; Correction grammaticale</p>
-                    <p>&bull; Optimisations et corrections.</p>
-
-                    <br>
-
-                    <h1 style="font-weight: bolder">Version 2.07</h1>
-                    <p>&bull; Refonte de la page d'accueil et de la page à propos.</p>
-                    <p>&bull; Amélioration de la traduction.</p>
-                    <p>&bull; Changement de plusieurs images (logo et bannière YouTube).</p>
-                    <p>&bull; Optimisations et corrections.</p>
-
-                    <br>
-
-                    <h1 style="font-weight: bolder">Version 2.06</h1>
-                    <p>&bull; Ajout d'une page permettant de consulter l'historique des versions.</p>
-                    <p>&bull; Résolution d'un problème de qualité des images (Progressbar Touch).</p>
-                    <p>&bull; Optimisations et corrections.</p>
-
-                    <br>
-
-                    <h2 style="font-weight: bold">Version 2.05</h2>
-                    <p>&bull; Amélioration des bordures et des effets d'ombre.</p>
-                    <p>&bull; Refonte visuelle de la barre de navigation.</p>
-                    <p>&bull; Optimisations et corrections.</p>
-                    <p>&bull; Mise à jour du matériel.</p>
-
-                    <br>
-
-                    <h2 style="font-weight: bold">Version 2.04</h2>
-                    <p>&bull; Mise à jour du matériel.</p>
-
-                    <br>
-
-                    <h2 style="font-weight: bold">Version 2.03</h2>
-                    <p>&bull; Améliorations de la lecture du code.</p>
-                    <p>&bull; Le logo de la page d'accueil a été mis à jour.</p>
-                    <p>&bull; Le mode responsive a été mis à jour.</p>
-                    <p>&bull; Corrections liées à la traduction.</p>
-
-                    <br>
-
-                    <h2 style="font-weight: bold">Version 2.02</h2>
-                    <p>&bull; Optimisations et corrections.</p>
-
-                    <br>
-
-                    <h2 style="font-weight: bold">Version 2.01</h2>
-                    <p>&bull; Corrections liées à la traduction.</p>
-                    <p>&bull; Optimisations et corrections.</p>
-
-                    <br>
-                    <h2 style="font-weight: bold">Version 2.00</h2>
-                    <p>&bull; Lancement initial.</p>
-
-                </div>
             </div>
         </section>
         <!-- Social pages -->
@@ -361,6 +306,7 @@
 </body>
 
 <script src="./js/script.js"></script>
+<script src="./js/carousel.js"></script>
 <script src="./js/translate.js"></script>
 
 </html>
