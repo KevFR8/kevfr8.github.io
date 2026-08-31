@@ -13,7 +13,7 @@
 
     let currentIndex = 0;
     let autoplayTimer = null;
-    const AUTOPLAY_DELAY = 16000; // ms
+    const AUTOPLAY_DELAY = 20000; // ms
 
     // Build dots
     slides.forEach((_, i) => {
